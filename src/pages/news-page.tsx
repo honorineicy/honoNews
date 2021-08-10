@@ -32,7 +32,7 @@ const NewsPage: React.FC<Props> = ({ navigation }) => {
 
     useEffect(() => {
   
-      axios.get('https://newsapi.org/v2/everything?q=tesla&from=2021-08-09&sortBy=publishedAt&apiKey=370c83ee097f4438b59685065c6daced').then(res => {
+      axios.get('https://newsapi.org/v2/everything?q=tesla&from=2021-08-09&sortBy=publishedAt&apiKey=f482840d0a1d4c6eb67530b2f841fc74').then(res => {
         console.log(res.data.articles)
         const data = res.data.articles
         setMyData(data);
